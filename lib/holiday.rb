@@ -59,6 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season,y|
     puts "#{season.capitalize}:"
     y.each do |holiday,b|
+      
       puts "  #{holiday.to_s.split("_").join(" ").capitalize}: #{b.join(", ")}"
     end
   end

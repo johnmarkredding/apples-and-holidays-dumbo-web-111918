@@ -73,7 +73,7 @@ def all_holidays_with_bbq(holiday_hash)
   new_holidays = []
   holiday_hash.each do |season, val|
     new_holidays << val.select do |holiday, a|
-      a.has("BBQ")
+      a.include?("BBQ")
     end
   end
 end

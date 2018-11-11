@@ -75,6 +75,7 @@ def all_holidays_with_bbq(holiday_hash)
     val.each do |holiday, a|
       if a.include?("BBQ")
         new_holidays << holiday
+      end
     end
   end
   new_holidays
